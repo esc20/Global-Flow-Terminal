@@ -4,7 +4,7 @@ Dashboard em Angular que reúne, em uma única tela, cotação de moedas, o cicl
 
 **Demo:** 
 
-![Preview do dashboard](dashboard-de-cambio-modular\assets\global-flow-demo.gif)
+![Preview do dashboard](dashboard-de-cambio-modular/assets/global-flow-demo.gif)
 
 
 ---
