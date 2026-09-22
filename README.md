@@ -88,6 +88,10 @@ src/
 - [ ] Histórico comparativo entre períodos
 - [ ] Deploy automatizado via GitHub Actions
 
+## 🔗 Acesse o projeto
+**Site Global Flow Terminal**
+[Clique aqui para acessar o projeto online](https://dash-board-de-cambio-modular-psi.vercel.app/)
+
 ## Contato
 
 Feito por [@esc20](https://github.com/esc20).
