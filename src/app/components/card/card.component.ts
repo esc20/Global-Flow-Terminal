@@ -61,6 +61,7 @@ export class CardComponent implements OnInit {
   private iniciarMonitoramento() {
     timer(0, 3600000).pipe(
       switchMap(() => this._currencyService.getRates().pipe(
+        retry({ count: 2, delay: 5000 }),
         catchError(() => {
           return of({
             result: 'success',
@@ -71,7 +72,6 @@ export class CardComponent implements OnInit {
           } as ExchangeRateResponse & { isSimulado: boolean });
         })
       )),
-      retry({ count: 2, delay: 5000 })
     ).subscribe({
       next: (res: ExchangeRateResponse & { isSimulado?: boolean }) => {
         this.processarDados(res.conversion_rates, res.isSimulado || false);
